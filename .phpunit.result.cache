@@ -1,0 +1,1 @@
+C:30:"PHPUnit\Runner\TestResultCache":224:{a:2:{s:7:"defects";a:1:{s:76:"TheCodingMachine\Tdbm\Graphql\Bundle\Tests\FunctionalTest::testServiceWiring";i:5;}s:5:"times";a:1:{s:76:"TheCodingMachine\Tdbm\Graphql\Bundle\Tests\FunctionalTest::testServiceWiring";d:4.224;}}}

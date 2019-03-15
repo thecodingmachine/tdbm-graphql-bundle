@@ -1,0 +1,47 @@
+{
+  "name" : "thecodingmachine/tdbm-graphql-bundle",
+  "description" : "A Symfony bundle for thecodingmachine/tdbm-graphql.",
+  "keywords" : [
+    "graphql",
+    "tdbm",
+    "bundle",
+    "symfony"
+  ],
+  "homepage" : "https://thecodingmachine.github.io/tdbm/",
+  "type" : "symfony-bundle",
+  "license" : "MIT",
+  "authors" : [{
+    "name" : "David Négrier",
+    "email" : "d.negrier@thecodingmachine.com",
+    "homepage" : "http://mouf-php.com"
+  }
+  ],
+  "require" : {
+    "php" : ">=7.2",
+    "thecodingmachine/graphqlite-bundle": "^3",
+    "thecodingmachine/tdbm-bundle": "^5.1",
+    "thecodingmachine/tdbm-graphql": "~3.1.0",
+    "symfony/framework-bundle": "^4.1.9"
+  },
+  "require-dev": {
+    "symfony/security-bundle": "^4.1.9",
+    "symfony/yaml": "^4.1.9",
+    "phpunit/phpunit": "^8.0.4",
+    "phpstan/phpstan": "^0.11.4"
+  },
+  "scripts": {
+    "phpstan": "phpstan analyse TdbmGraphqlBundle.php DependencyInjection/ Resources/ -c phpstan.neon --level=7 --no-progress"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "TheCodingMachine\\Tdbm\\Graphql\\Bundle\\" : ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.1.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
