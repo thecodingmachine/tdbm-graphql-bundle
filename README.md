@@ -9,5 +9,4 @@
 
 Symfony 4 bundle for the [thecodingmachine/tdbm-graphql](https://github.com/thecodingmachine/tdbm-graphql) package.
 
-See [thecodingmachine/graphqlite](https://github.com/thecodingmachine/graphqlite)
-and [thecodingmachine/tdbm](https://thecodingmachine.github.io/tdbm/)
+See [thecodingmachine/graphqlite](https://github.com/thecodingmachine/graphqlite) and [thecodingmachine/tdbm](https://thecodingmachine.github.io/tdbm/)
