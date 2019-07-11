@@ -1,5 +1,4 @@
-parameters:
-    ignoreErrors:
-        - "#Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition::children\\(\\)#"
+#parameters:
+#    ignoreErrors:
 #includes:
 #    - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon

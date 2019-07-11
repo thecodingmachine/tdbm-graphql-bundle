@@ -9,10 +9,7 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false" />
         
-        <service id="TheCodingMachine\Tdbm\GraphQL\GraphQLTypeAnnotator">
-            <argument></argument> <!-- will be filled in with tdbm-graphql.type_namespace dynamically -->
-            <argument></argument> <!-- will be filled in with tdbm-graphql.generated_type_namespace dynamically -->
-        </service>
+        <service id="TheCodingMachine\Tdbm\GraphQL\GraphQLTypeAnnotator" />
     </services>
 
 </container>
