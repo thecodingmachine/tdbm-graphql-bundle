@@ -41,7 +41,7 @@ use TheCodingMachine\Tdbm\GraphQL\GraphQLTypeAnnotator;
 /**
  * Detects controllers and types automatically and tag them.
  */
-class TdbmGraphqlCompilerPass implements CompilerPassInterface
+class TheCodingMachineTdbmGraphqlCompilerPass implements CompilerPassInterface
 {
     /**
      * This Compiler pass adds the GraphQLTypeAnnotator to TDBM configuration

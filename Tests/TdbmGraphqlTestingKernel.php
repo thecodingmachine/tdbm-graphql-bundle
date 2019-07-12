@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\RouteCollectionBuilder;
 use TheCodingMachine\Graphqlite\Bundle\GraphqliteBundle;
 use TheCodingMachine\TDBM\Bundle\TdbmBundle;
-use TheCodingMachine\Tdbm\Graphql\Bundle\TdbmGraphqlBundle;
+use TheCodingMachine\Tdbm\Graphql\Bundle\TheCodingMachineTdbmGraphqlBundle;
 
 class TdbmGraphqlTestingKernel extends Kernel
 {
@@ -32,7 +32,7 @@ class TdbmGraphqlTestingKernel extends Kernel
             new DoctrineBundle(),
             new TdbmBundle(),
             new GraphqliteBundle(),
-            new TdbmGraphqlBundle(),
+            new TheCodingMachineTdbmGraphqlBundle(),
         ];
     }
 
