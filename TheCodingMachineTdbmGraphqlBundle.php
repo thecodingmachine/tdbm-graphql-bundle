@@ -8,7 +8,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use TheCodingMachine\Tdbm\Graphql\Bundle\DependencyInjection\TdbmGraphqlCompilerPass;
 
-class TdbmGraphqlBundle extends Bundle
+class TheCodingMachineTdbmGraphqlBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
