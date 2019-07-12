@@ -31,7 +31,7 @@
     "php-coveralls/php-coveralls": "^2.1"
   },
   "scripts": {
-    "phpstan": "phpstan analyse TdbmGraphqlBundle.php DependencyInjection/ Resources/ -c phpstan.neon --level=7 --no-progress"
+    "phpstan": "phpstan analyse TheCodingMachineTdbmGraphqlBundle.php DependencyInjection/ Resources/ -c phpstan.neon --level=7 --no-progress"
   },
   "autoload" : {
     "psr-4" : {
