@@ -19,7 +19,7 @@
   "require" : {
     "php" : ">=7.2",
     "thecodingmachine/graphqlite-bundle": "^4",
-    "thecodingmachine/tdbm-bundle": "^5.1",
+    "thecodingmachine/tdbm-bundle": "^5.2",
     "thecodingmachine/tdbm-graphql": "~4.0",
     "symfony/framework-bundle": "^4.1.9 | ^5"
   },
@@ -40,7 +40,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "4.0.x-dev"
+      "dev-master": "4.1.x-dev"
     }
   },
   "minimum-stability": "dev",
