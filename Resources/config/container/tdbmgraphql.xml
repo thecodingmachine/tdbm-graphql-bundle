@@ -10,6 +10,9 @@
         <defaults autowire="true" autoconfigure="true" public="false" />
         
         <service id="TheCodingMachine\Tdbm\GraphQL\GraphQLTypeAnnotator" />
+        <service id="TheCodingMachine\Tdbm\GraphQL\Middlewares\NoBeanFoundExceptionWrapperMiddleware">
+            <tag name="graphql.field_middleware"/>
+        </service>
     </services>
 
 </container>
