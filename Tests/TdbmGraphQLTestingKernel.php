@@ -1,20 +1,21 @@
 <?php
 
 
-namespace TheCodingMachine\Tdbm\Graphql\Bundle\Tests;
+namespace TheCodingMachine\Tdbm\GraphQL\Bundle\Tests;
 
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
+use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\RouteCollectionBuilder;
-use TheCodingMachine\Graphqlite\Bundle\GraphqliteBundle;
+use TheCodingMachine\GraphQLite\Bundle\GraphQLiteBundle;
 use TheCodingMachine\TDBM\Bundle\TdbmBundle;
-use TheCodingMachine\Tdbm\Graphql\Bundle\TheCodingMachineTdbmGraphqlBundle;
+use TheCodingMachine\Tdbm\GraphQL\Bundle\TheCodingMachineTdbmGraphQLBundle;
 
-class TdbmGraphqlTestingKernel extends Kernel
+class TdbmGraphQLTestingKernel extends Kernel
 {
     use MicroKernelTrait;
 
@@ -28,11 +29,11 @@ class TdbmGraphqlTestingKernel extends Kernel
     public function registerBundles()
     {
         return [
-            new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new FrameworkBundle(),
             new DoctrineBundle(),
             new TdbmBundle(),
-            new GraphqliteBundle(),
-            new TheCodingMachineTdbmGraphqlBundle(),
+            new GraphQLiteBundle(),
+            new TheCodingMachineTdbmGraphQLBundle(),
         ];
     }
 
@@ -57,8 +58,8 @@ class TdbmGraphqlTestingKernel extends Kernel
 
             $container->loadFromExtension('graphqlite', array(
                 'namespace' => [
-                    'controllers' => ['TheCodingMachine\\Graphqlite\\Bundle\\Tests\\Fixtures\\Controller\\'],
-                    'types' => ['TheCodingMachine\\Graphqlite\\Bundle\\Tests\\Fixtures\\Types\\', 'TheCodingMachine\\Graphqlite\\Bundle\\Tests\\Fixtures\\Entities\\']
+                    'controllers' => ['TheCodingMachine\\GraphQLite\\Bundle\\Tests\\Fixtures\\Controller\\'],
+                    'types' => ['TheCodingMachine\\GraphQLite\\Bundle\\Tests\\Fixtures\\Types\\', 'TheCodingMachine\\GraphQLite\\Bundle\\Tests\\Fixtures\\Entities\\']
                 ]
             ));
         });

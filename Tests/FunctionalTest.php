@@ -1,18 +1,18 @@
 <?php
 
-namespace TheCodingMachine\Tdbm\Graphql\Bundle\Tests;
+namespace TheCodingMachine\Tdbm\GraphQL\Bundle\Tests;
 
+use Laminas\Code\Generator\FileGenerator;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
-use TheCodingMachine\Tdbm\Graphql\Bundle\Tests\Fixtures\ExposeConfiguration;
+use TheCodingMachine\Tdbm\GraphQL\Bundle\Tests\Fixtures\ExposeConfiguration;
 use TheCodingMachine\TDBM\Utils\BeanDescriptor;
-use Zend\Code\Generator\FileGenerator;
 use TheCodingMachine\GraphQLite\Annotations\Field;
 
 class FunctionalTest extends KernelTestCase
 {
     protected static function createKernel(array $options = [])
     {
-        return new TdbmGraphqlTestingKernel('test', true);
+        return new TdbmGraphQLTestingKernel('test', true);
     }
 
     public function testServiceWiring()

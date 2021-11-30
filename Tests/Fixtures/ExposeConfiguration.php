@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TheCodingMachine\Tdbm\Graphql\Bundle\Tests\Fixtures;
+namespace TheCodingMachine\Tdbm\GraphQL\Bundle\Tests\Fixtures;
 
 
 use TheCodingMachine\TDBM\Configuration;
